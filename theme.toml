@@ -1,8 +1,8 @@
-author = "Markus Eliasson"
-description = "Liquorice is a small black and white theme for Hugo."
+author = "hans0"
+description = "fs3curity."
 license = "MIT"
-licenselink = "https://github.com/eliasson/liquorice/blob/master/LICENSE"
-name = "liquorice"
-source_repo = "https://github.com/eliasson/liquorice"
+licenselink = ""
+name = "liquorice-1"
+source_repo = "https://github.com/d0ntdeleteme/liquorice-1"
 tags = ["", ""]
 min_version=0.20

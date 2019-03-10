@@ -1,6 +1,10 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
 
+<!-- layouts/blog/single.html -->
+<!-- ... -->
+{{ partial "tags.html" .}}
+
 {{ $baseurl := .Site.BaseURL }}
 {{ $categories := .Params.categories }}
 {{ $tags := .Params.tags }}
@@ -41,7 +45,7 @@
         <div class="row li-pagination">
             <div class="eight columns">
                 <div class="li-pagination-previous">
-                    {{with .Prev}}
+                    {{with .NextPage}}
                         Later article<br />
                         <a href="{{.Permalink}}"> {{.Title}}</a>
                     {{else}}
@@ -51,7 +55,7 @@
             </div>
             <div class="eight columns">
                 <div class="li-pagination-next">
-                    {{with .Next}}
+                    {{with .PrevPage}}
                         Older article<br />
                         <a href="{{.Permalink}}"> {{.Title}}</a>
                     {{else}}

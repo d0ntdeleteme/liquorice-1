@@ -13,6 +13,42 @@
  *   Free to use under the MIT license.
  */
 
+/* THIS IS THE CSS TO CENTRE POST IMAGES */
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
+
+div {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+/***** Centering Email Contact Form ??????? Not Working
+.myform {
+    margin:50px 0px; padding:0px;
+    text-align:center;
+    align:center;
+} 
+
+label,input {
+ display: block;
+ width: 150px;
+ float: left;
+ margin-bottom: 10px;
+}
+
+label {
+ text-align: right;
+ width: 75px;
+ padding-right: 20px;
+}
+
+br {
+ clear: left;
+}
+Centering Email Contact Form ??????? Not Working *****/
+
 /** States ******************************************************************/
 .li-right {
     float: right
@@ -32,14 +68,15 @@ a,
 a:active,
 a:hover,
 a:visited {
-    color: #202020;
+    color: #232524;
     text-decoration: none;
     font-weight: bold;
 }
-
+/* post heading colour and size */
 h1,h2,h3,h4,h5,h6 {
-    color: #202020;
-    font-weight: lighter;
+    color: #080808b0;
+    font-size: 1.2em;
+    font-weight: normal;
 }
 
 pre {
@@ -54,15 +91,22 @@ pre code {
 }
 
 /** Screen furniture ********************************************************/
+/* brand left top and mobile menu colour*/
 .li-page-header {
-    background-color: #202020;
-    color: #fff;
+    background-color: rgba(250, 248, 248, 0.918);
+    background-color: rgba(10, 235, 28, 0.918);
+    background-color: rgba(233, 239, 240, 0.918);
+    background-color: rgb(6, 10, 34);
+    background-color: rgb(6, 12, 46);
+    background-color: rgba(100, 100, 102, 0.918);
+    background-color: rgba(229, 236, 238, 0.918);
+    color: #080007;
     padding: 32px 0px;
 }
 
 .li-page-header ul {
     list-style: none;
-    margin: 0px;
+    margin: 5px;
     line-height: 30px;
 }
 
@@ -72,28 +116,39 @@ pre code {
     line-height: 30px;
     margin-left: 30px;
 }
-
+/***????????????????????????????????**/
 .li-page-header ul li a,
 .li-page-header ul li a:active,
 .li-page-header ul li a:hover,
 .li-page-header ul li a:visited {
-    color: #ccc;
+    color: rgba(0, 0, 0, 0.918);
+    color: rgba(215, 221, 223, 0.918);
+    color: rgba(10, 201, 235, 0.918);
+    color: rgba(10, 248, 10, 0.918);
+    color: rgba(215, 221, 223, 0.918);
+    color: rgba(0, 0, 0, 0.918);
     font-weight: normal;
     text-decoration: none;
 }
 
 .li-page-header ul li a:active,
 .li-page-header ul li a:hover {
-    color: #fff;
+    /*background-color: rgb(214, 5, 186);*/
+    color: rgb(250, 62, 187);
 }
-
+/***????????????????????????????????**/
 .li-page-header .li-brand a,
 .li-page-header .li-brand a:active,
 .li-page-header .li-brand a:hover,
 .li-page-header .li-brand a:visited {
-    color: #fff;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.918);
+    color: rgba(10, 235, 28, 0.918);
+    color: rgba(10, 201, 235, 0.918);
+    color: rgba(0, 5, 5, 0.918);
+    color: rgba(0, 0, 0, 0.918);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.9em;
     text-decoration: none;
 }
 
@@ -108,6 +163,7 @@ pre code {
 }
 
 .li-article img {
+    margin: auto;
     height: auto;
     max-width: 100%;
 }
@@ -125,10 +181,10 @@ ul.li-article-list {
 .li-article-section {
     padding: 16px 0px;
 }
-
+/***????????????????????????????????**/
 .li-article-date,
 .li-article-taxonomies {
-    color: #999;
+    color: rgb(70, 71, 71);
     font-size: smaller;
 }
 
@@ -149,10 +205,14 @@ ul.li-article-list {
 .li-pagination-next {
     float: right;
 }
-
+/***????????????????????????????????**/
 .li-page-footer {
     font-size: smaller;
     padding: 48px 0px 32px 0px;
+    background-color: rgba(10, 235, 28, 0.918);
+    background-color: rgba(77, 182, 214, 0.918);
+    background-color: rgba(236, 240, 241, 0.918);
+    background-color: rgba(229, 236, 238, 0.918);
 }
 
 .li-page-footer-legal {
@@ -164,7 +224,7 @@ ul.li-article-list {
 }
 
 .li-main-article-list {
-    margin-top: 128px;
+    margin-top: 80px;
 }
 
 /** Mobile Portrait (320px) **************************************************/

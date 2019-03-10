@@ -1,0 +1,31 @@
+<!-- layouts/taxonomy/tag.html -->
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+    <div class="container">
+        <div class="row">
+            <div class="sixteen columns">
+                <h1>{{.Title}}</h1>
+                <ul class="li-article-list">
+                
+                <ul>
+                    {{ range .Data.Pages }}
+                    <a href="{{.RelPermalink}}">{{ .Title }}</a>
+                        
+                        <article>
+                            <section class="li-article-section">
+                                {{ .Summary }}
+                            </section>
+                            <footer>
+                                <a href='{{ .Permalink }}'></a>
+                            </footer>
+                        </article>
+
+                    {{ end }}
+                </ul>
+
+            </div>
+        </div>
+    </div>
+{{ partial "footer.html" . }}
+{{ partial "tail.html" . }}
