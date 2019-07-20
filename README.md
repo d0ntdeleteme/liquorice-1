@@ -1,11 +1,11 @@
-# liquorice
+# liquorice-1
 
-Liquorice is a small black and white theme for [Hugo](https://github.com/spf13/hugo) (a fast and modern static website engine).
+Liquorice-1 is a small black and white theme for [Hugo](https://github.com/spf13/hugo) (a fast and modern static website engine).
 
 
 ### Dependencies
 
-Liquorice needs at least version 0.20 of Hugo.
+Liquorice-1 needs at least version 0.20 of Hugo.
 
 
 ### Partials
@@ -25,7 +25,7 @@ In order to override and have your own markup appended to single pages, just cre
 
 ### Shortcodes
 
-Liquorice comes with these additional shortcodes:
+Liquorice-1 comes with these additional shortcodes:
 
 
 #### gist
@@ -41,7 +41,7 @@ Where the first parameter is the gist id.
 
 There is not much to build, but the theme CSS is minified using the node tool [clean-css](https://github.com/GoalSmashers/clean-css).
 
-    cleancss -o static/css/liquorice.min.css static/css/liquorice.css
+    cleancss -o static/css/liquorice.min.css static/css/liquorice-1.css
 
 *Any change in styles needs to result in a minification!*
 
