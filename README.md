@@ -2,6 +2,44 @@
 
 Liquorice-1 is a small black and white theme for [Hugo](https://github.com/spf13/hugo) (a fast and modern static website engine).
 
+    mkdir $my_hugo_site
+
+    cd $my_hugo_site
+    
+    git clone https://github.com/d0ntdeleteme/liquorice-1.git 
+
+    hugo new site $NAME_HERE
+    
+    cd $NAME_HERE
+    
+    git init
+
+    git submodule add https://github.com/d0ntdeleteme/liquorice-1.git themes/liquorice-1
+
+    git submodule init
+  
+    git submodule update
+    
+    ls themes
+        liquorice-1 
+
+    ### open Vscode from the terminal type: 
+    code .
+    
+    ### open themes folder click on theme.toml change name to "liquorice-1"  
+    name = "liquorice-1"
+    
+    ### open the config.toml file and add: 
+    theme = "liquorice-1"
+    Save Changes
+    
+    
+    ### start the hugo server from the terminal at /$NAME_HERE 
+    
+    hugo server
+
+    ### open a browser navigate to localhost:1313 
+
 
 ### Dependencies
 
@@ -10,7 +48,7 @@ Liquorice-1 needs at least version 0.20 of Hugo.
 
 ### Partials
 
-There are a few partials that is of great interest to override
+There are a few partials available to override
 
 
 #### author
